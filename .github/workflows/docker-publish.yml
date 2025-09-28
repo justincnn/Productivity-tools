@@ -31,7 +31,7 @@ jobs:
           file: ./server/Dockerfile
           platforms: linux/arm64 # Optimized: Target specific architecture
           push: true
-          tags: your_dockerhub_username/ai-tool-server:latest # Replace with your Docker Hub username
+          tags: justincnn/ai-tool-server:latest # Replace with your Docker Hub username
 
       - name: Build and push client image
         uses: docker/build-push-action@v4
@@ -40,4 +40,4 @@ jobs:
           file: ./client/Dockerfile
           platforms: linux/arm64 # Optimized: Target specific architecture
           push: true
-          tags: your_dockerhub_username/ai-tool-client:latest # Replace with your Docker Hub username
+          tags: justincnn/ai-tool-client:latest # Replace with your Docker Hub username
